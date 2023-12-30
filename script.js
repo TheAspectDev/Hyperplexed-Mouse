@@ -1,11 +1,12 @@
 document.onreadystatechange = () => {
   if (document.readyState === "complete") {
+    // variables for some effects.
     let particles = [];
     let mousePosition = { x: 0, y: 0 };
     let dotPosition = { x: 0, y: 0 };
 
-    var primaryMouseButtonDown = false;
-
+    // on-click actions
+    var primaryMouseButtonDown = false;    
     function setPrimaryButtonState(e) {
       var flags = e.buttons !== undefined ? e.buttons : e.which;
       primaryMouseButtonDown = (flags & 1) === 1;
@@ -15,10 +16,12 @@ document.onreadystatechange = () => {
     document.addEventListener("mousemove", setPrimaryButtonState);
     document.addEventListener("mouseup", setPrimaryButtonState);
 
+    // TOUSE
     Array.prototype.random = function () {
       return this[Math.floor(Math.random() * this.length)];
     };
 
+    // Basic math: Pythagorean theorem
     const calcDistance = (a, b) => {
       const disX = b.x - a.x;
       const disY = b.y - a.y;
@@ -26,8 +29,8 @@ document.onreadystatechange = () => {
       return Math.sqrt(Math.pow(disX, 2) + Math.pow(disY, 2));
     };
 
+    // The big green circle. that eats others.
     const Maindot = document.getElementById("container");
-    console.log(document);
 
     document.body.appendChild(Maindot);
     Maindot.classList.add("maindot");
@@ -69,7 +72,7 @@ document.onreadystatechange = () => {
         }
       }
     });
-
+    // TOUSE
     const angle = (cx, cy, ex, ey) => {
       const dy = ey - cy;
       const dx = ex - cx;
