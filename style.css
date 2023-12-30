@@ -1,0 +1,25 @@
+* {
+  user-select: none;
+}
+
+.dot {
+  position: absolute;
+  border-radius: 1000px;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 0 5px rgba(13, 175, 13, 0.997) inset;
+  transition: left, top;
+}
+.maindot {
+  position: absolute;
+  border-radius: 1000px;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 15px 10px rgba(13, 175, 13, 0.997) inset;
+  transition: all;
+  transition-duration: 500ms;
+}
+.dot-anim {
+  transition-duration: 500ms;
+}
