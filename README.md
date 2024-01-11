@@ -8,6 +8,6 @@ Thanks to [@Hyperplexed](www.youtube.com/@Hyperplexed) for challenging me to cre
 To deploy this project, use an apache server or any other servers.
 for checking/testing the project i can assist you to [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) plugin for [Visual Studio Code](https://code.visualstudio.com).
 
-# Terms of Service
+# Terms of Use
 Project is made for fun. and can be edited and be used in public.
 ```even for commercial use```
